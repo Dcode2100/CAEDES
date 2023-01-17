@@ -1,12 +1,14 @@
 import React from 'react'
-import { Header } from '../../Components';
+import { Footer, Header } from '../../Components';
+import './Home.css';
+
 const Home = () => {
   return (
-    <div className='Home'>
-      <Header/>
-      Home
+    <div className='home'>
+        <Header />
+        <Footer />
     </div>
-  )
+  );
 }
 
 export default Home
