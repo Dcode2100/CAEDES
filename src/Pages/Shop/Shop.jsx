@@ -1,11 +1,15 @@
 import React from 'react'
-import { Header } from '../../Components';
+import { Footer, Header } from '../../Components';
+import "./Shop.css";
 
 const Shop = () => {
   return (
-    <div className="Shop">
-      <Header/>
+    <div className="shop">
+      <Header />
       Shop
+      
+        <Footer />
+      
     </div>
   );
 }
