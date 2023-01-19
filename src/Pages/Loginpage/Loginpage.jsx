@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from '../../Components';
+import { Header,Footer } from '../../Components';
 
 
 const Login_page = () => {
@@ -7,6 +7,7 @@ const Login_page = () => {
     <div className='Login_page'>
       <Header/>
       LoginPage
+      <Footer/>
     </div>
   )
 }

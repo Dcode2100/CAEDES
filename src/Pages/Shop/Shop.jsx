@@ -7,9 +7,7 @@ const Shop = () => {
     <div className="shop">
       <Header />
       Shop
-      
-        <Footer />
-      
+      <Footer />
     </div>
   );
 }

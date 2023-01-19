@@ -2,7 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import './Header.css'
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import { mainlogo, cart_logo} from '../../assets';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { mainlogo} from '../../assets';
 
 
 const Header = () => {
@@ -28,7 +29,10 @@ const Header = () => {
         </div>
         <div className="flex-right">
           <Link to="/cart">
-            <img className="cart_logo" src={cart_logo} alt="cart logo"></img>
+            <div className="cart_logo">
+              <ShoppingCartIcon />
+              <div className='Cart'>Cart</div>
+            </div>
           </Link>
           <Link
             to="/signuppage"
@@ -43,9 +47,9 @@ const Header = () => {
             <span>Login</span>
           </Link>
           <Link to="/profile">
-            '
-            <div className="AccountBoxIcon" >
+            <div className="AccountBoxIcon">
               <AccountBoxIcon />
+              <div>Account</div>
             </div>
           </Link>
         </div>

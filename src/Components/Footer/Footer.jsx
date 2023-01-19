@@ -1,8 +1,8 @@
-import React from 'react'
-import { mainlogo } from '../../assets';
-import './Footer.css';
-import {Facebook, Twitter, Pinterest, Instagram} from '@mui/icons-material';
-import { ListItem } from '@mui/material';
+import React from "react";
+import { mainlogo } from "../../assets";
+import "./Footer.css";
+import { Facebook, Twitter, Pinterest, Instagram } from "@mui/icons-material";
+import { ListItem } from "@mui/material";
 
 const myaccount = ["My Orders", "Account Settings", "Email preferences"];
 const aboutus = ["Our Story", "Our Team", "Our Partners", "Our Blog"];
@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="footer__right-container">
           <div className="footer__container-myaccount">
             <p className="footer__myaccount">My Account</p>
-            <ul classname="myaccountlist-item">
+            <ul className="myaccountlist-item">
               {myaccount.map((myaccount) => (
                 <ListItem key={myaccount}>{myaccount}</ListItem>
               ))}
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           <div className="footer__container-aboutus">
             <p className="footer__myaccount">About Us</p>
-            <ul classname="myaccountlist-item">
+            <ul className="myaccountlist-item">
               {aboutus.map((aboutus) => (
                 <ListItem key={aboutus}>{aboutus}</ListItem>
               ))}
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
           <div className="footer__container-customerservice">
             <p className="footer__myaccount">Customer Service</p>
-            <ul classname="myaccountlist-item">
+            <ul className="myaccountlist-item">
               {customerservice.map((customerservice) => (
                 <ListItem key={customerservice}>{customerservice}</ListItem>
               ))}
@@ -69,6 +69,8 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+
+  
+};
 
 export default Footer;

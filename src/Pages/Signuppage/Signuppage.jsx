@@ -1,11 +1,12 @@
 import React from 'react'
-import { Header } from '../../Components';
+import { Header,Footer } from '../../Components';
 
 const Signup_page = () => {
   return (
     <div className="Signup_page">
       <Header />
       SignupPage
+      <Footer/>
     </div>
   );
 }
