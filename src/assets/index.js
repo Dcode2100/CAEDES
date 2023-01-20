@@ -6,5 +6,4 @@ export{
     cart_logo,
     LOGO,
     mainlogo,
-    
 }
