@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
 import './Header.css'
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
@@ -7,6 +7,7 @@ import {mainlogo} from '../../assets';
 
 
 const Header = () => {
+    const [nav, setNav] = useState(false);
   return (
     <div className="header">
       <Link to="/">
