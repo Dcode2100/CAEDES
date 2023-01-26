@@ -1,42 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.footer{
-    background-color: #212226;
-    height: 362px;
-}
-.footer__container{
-    display: flex;
-    width: 100%;
-}
 
 
-.footer__container-connect{
-    margin: 20px 60px 110px 70px;
-    width: 230px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__logo{
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.footer__connectwithus{
-    color: #ff0000;
-    padding-bottom: 10px;
-}
-.footer__socialmedia-container{
-    display: flex;
-    gap: 10px;
-}
-.footer__socialmedia{
-    color: white;
-}
 p{
     color: #ffffff;
     padding-left: 15px;

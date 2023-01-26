@@ -10,22 +10,22 @@ const customerservice = ["Help center", "Delivery", "Returns", "Contact Us"];
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__container">
-        <div className="footer__container-connect">
-          <img className="footer__logo" src={mainlogo} alt="logo"></img>
-          <div className="footer__connectwithus">Connect with us</div>
-          <div className="footer__socialmedia-container">
-            <div className="footer__socialmedia">
+    <div className="h-96 bg-custom-b">
+      <div className="flex w-full">
+        <div className="mt-5 mr-14 mb-28 ml-16 flex h-32 w-60 flex-col items-center">
+          <img className="mb-3 h-12" src={mainlogo} alt="logo"></img>
+          <div className="pb-3 text-custom-red">Connect with us</div>
+          <div className="flex gap-3">
+            <div className="text-white">
               <Facebook />
             </div>
-            <div className="footer__socialmedia">
+            <div className="text-white">
               <Twitter />
             </div>
-            <div className="footer__socialmedia">
+            <div className="text-white">
               <Pinterest />
             </div>
-            <div className="footer__socialmedia">
+            <div className="text-white">
               <Instagram />
             </div>
           </div>
@@ -59,7 +59,10 @@ const Footer = () => {
             <p className="footer__myaccount">Subcribe to our Newsletter</p>
             <div className="footer__container-newsletter-input">
               <button id="footer_input-button">Subscribe</button>
-              <input id="footer-input" placeholder="Type your email ..."></input>
+              <input
+                id="footer-input"
+                placeholder="Type your email ..."
+              ></input>
             </div>
           </div>
         </div>
