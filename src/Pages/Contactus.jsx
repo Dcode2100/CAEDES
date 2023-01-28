@@ -1,6 +1,5 @@
 import React from 'react'
-import { Header,Footer } from '../../Components';
-
+import { Footer, Header } from "../Components";
 const Contactus = () => {
   return (
     <div className="Contactus">

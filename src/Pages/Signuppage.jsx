@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header,Footer } from '../../Components';
+import { Footer, Header } from "../Components";
 
 const Signup_page = () => {
   return (

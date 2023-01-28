@@ -1,6 +1,5 @@
 import React from "react";
-import { mainlogo } from "../../assets";
-import "./Footer.css";
+import {mainlogo} from "../assets";
 import { Facebook, Twitter, Pinterest, Instagram } from "@mui/icons-material";
 import { ListItem } from "@mui/material";
 

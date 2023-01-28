@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import {mainlogo} from '../../assets';
+import {mainlogo} from '../assets';
 
 
 const Header = () => {

@@ -1,12 +1,12 @@
-import Cards from './Cards/Cards';
-import Carousel from './Carousel/Carousel';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Customersaying from './Customersaying/Customersaying'; 
-import Login from './Login/Login';
-import Productlist from './Productlist/Productlist';
-import Sidebar from './Sidebar/Sidebar';
-import Signup from './Signup/Signup';
+import Cards from './Cards';
+import Carousel from './Carousel';
+import Footer from './Footer';
+import Header from './Header';
+import Customersaying from './Customersaying'; 
+import Login from './Login';
+import Productlist from './Productlist';
+import Sidebar from './Sidebar';
+import Signup from './Signup';
 
 export  {
     Cards,

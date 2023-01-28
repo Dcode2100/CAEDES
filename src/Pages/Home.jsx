@@ -1,6 +1,6 @@
 import React from 'react'
-import { Footer, Header } from '../../Components';
-import './Home.css';
+import { Footer, Header } from "../Components";
+
 
 const Home = () => {
   return (
