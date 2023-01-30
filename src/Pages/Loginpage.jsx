@@ -6,7 +6,7 @@ const Login_page = () => {
     <div className='Login_page'>
       <Header/>
       LoginPage
-      
+      <Footer/>
     </div>
   )
 }
