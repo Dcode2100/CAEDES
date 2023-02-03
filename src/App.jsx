@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Home, Contactus, Shop, Signuppage, Loginpage, Profile, Cart} from './Pages';
+import {Home, Contactus, Shop, Signuppage, Loginpage, Profile, Cart} from './pages';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App box-border w-full border-2 border-blue-700 ">
       <Router>
         <Routes>
           <Route index element={<Home />} />

@@ -1,5 +1,5 @@
 import React,{ useEffect} from 'react'
-import { Footer, Header } from "../Components";
+import { Footer, Header } from "../components";
 
 
 

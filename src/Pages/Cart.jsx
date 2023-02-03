@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Header } from '../Components';
+import { Footer, Header } from '../components';
 
 const Cart = () => {
   return (
@@ -11,4 +11,4 @@ const Cart = () => {
   );
 }
 
-export default Cart
+export default Cart;
