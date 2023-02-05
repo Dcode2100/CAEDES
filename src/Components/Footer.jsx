@@ -4,8 +4,8 @@ import { socialicon } from "../common/Common";
 
 const Footer = () => {
   return (
-    <div className="h-96 bg-custom-b">
-      <div className="flex w-full">
+    <div className="h-96 bg-custom-b box-border">
+      <div className="flex w-full sm: flex-col">
         <div className="mt-5 mr-14 mb-28 ml-16 flex h-32 w-60 flex-col items-center border-2 ">
           <img className="mb-3 h-12" src={mainlogo} alt="logo"></img>
           <div className="pb-3 text-custom-red">Connect with us</div>
@@ -20,7 +20,6 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-5 flex gap-28 text-custom-gray">
-          
           <div className="footer__container-newsletter">
             <p className="text-white pl-4">Subcribe to our Newsletter</p>
             <div className="h-11 w-64 bg-white rounded-md flex pt-3 pl-4">

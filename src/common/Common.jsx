@@ -17,6 +17,16 @@ export const navlinks2 = [
   { id: "Account", link: "/profile", icon: <AccountBoxIcon /> },
 ];
 
+export const smnavlinks = [
+  { id: "Home", link: "/" },
+  { id: "Shop", link: "/shop" },
+  { id: "ContactUs", link: "/contactus" },
+  { id: "Cart", link: "/cart", icon: <ShoppingCartIcon /> },
+  { id: "Account", link: "/profile", icon: <AccountBoxIcon /> },
+  { id: "SignUp", link: "/signuppage" },
+  { id: "Login", link: "/loginpage" },
+];
+
 export const socialicon = [
     { id: 'facebook', icon: <Facebook /> },
     { id: 'twitter', icon: <Twitter /> },

@@ -5,7 +5,7 @@ const Signup_page = () => {
   return (
     <div className="Signup_page">
       <Header />
-      SignupPage
+      
       <Footer/>
     </div>
   );

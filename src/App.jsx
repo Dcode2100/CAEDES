@@ -5,10 +5,11 @@ import {Home, Contactus, Shop, Signuppage, Loginpage, Profile, Cart} from '../sr
 
 function App() {
   return (
-    <div className="App box-border w-full border-2 border-blue-700 ">
+    <div className="App box-border border-2 border-blue-700  m-0 p-0">
       <Router>
         <Routes>
-          <Route index element={<Home />} />
+          <Route path='/' element={<Home/>}/>
+          <Route path='/home'element={<Home />} />
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/signuppage" element={<Signuppage />} />

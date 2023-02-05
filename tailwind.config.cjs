@@ -5,14 +5,17 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '560px',
-         'md': '692px',
-         'lg': '1024px',
+        xs: "480px",
+        ss: "620px",
+        sm: "720px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
       },
       colors: {
-        'custom-b': '#212226',
-        'custom-red': '#FF0000',
-        'custom-gray': '#666666',
+        "custom-b": "#212226",
+        "custom-red": "#FF0000",
+        "custom-gray": "#666666",
       },
     },
   },
