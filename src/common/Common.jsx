@@ -4,51 +4,45 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 
 
+
 export const navlinks = [
-    { id: 'Home', link: '/' },
-    { id: 'Shop', link: '/shop' },
-    { id: 'ContactUs', link: '/contactus' },
-]
-
-export const navlinks2 = [
-  { id: "Cart", link: "/cart" , icon: <ShoppingCartIcon />},
-  { id: "SignUp", link: "/signuppage" },
-  { id: "Login", link: "/loginpage" },
-  { id: "Account", link: "/profile", icon: <AccountBoxIcon /> },
-];
-
-export const smnavlinks = [
-  { id: "Home", link: "/" },
-  { id: "Shop", link: "/shop" },
-  { id: "ContactUs", link: "/contactus" },
-  { id: "Cart", link: "/cart", icon: <ShoppingCartIcon /> },
-  { id: "Account", link: "/profile", icon: <AccountBoxIcon /> },
-  { id: "SignUp", link: "/signuppage" },
-  { id: "Login", link: "/loginpage" },
+  { n: 1, id: "Home", link: "/" },
+  { n: 2, id: "Shop", link: "/shop" },
+  { n: 3, id: "ContactUs", link: "/contactus" },
+  { n: 4, id: "Cart", link: "/cart"},
+  { n: 5, id: "Account", link: "/profile"},
+  { n: 6, id: "SignUp", link: "/signuppage" },
+  { n: 7, id: "Login", link: "/loginpage" },
 ];
 
 export const socialicon = [
-    { id: 'facebook', icon: <Facebook /> },
-    { id: 'twitter', icon: <Twitter /> },
+    { id: 'facebook',  icon: <Facebook /> },
+    { id: 'twitter',   icon: <Twitter /> },
     { id: 'pinterest', icon: <Pinterest /> },
     { id: 'instagram', icon: <Instagram /> },
 ]
 
 export const footer1 = [
 
-    { id: 'My account', link: '/account' },
-    { id: 'My orders', link: '/Cart' },
+    { id: 'My orders', link: '/profile/orders' },
+    { id: 'Account Settings', link: '/profile/settings' },
+    { id: 'Email preferences', link: '/profile/Emailpreference' },
+
 ]
 
 export const footer2 = [
-    { id : 'About us', link: '/about' },
-    { id : 'Our team', link: '/contact' },
+
+    { id : 'Our story', link: '/story' },
+    { id : 'Careers', link: '/carrers' },
+    { id : 'Home', link: './home'}
 ];
 
 export const footer3 = [
-    {id : 'Customer Service', link: '/about' },
-    {id : 'Contact us', link: '/contact' },
+
+    {id : 'Delivery', link: '/delivery' },
+    {id : 'Returns & Refunds', link: '/returns' },
+    {id : 'Contact us', link: '/Contactus' },
 ]
 
 
-export default { navlinks, navlinks2, socialicon, footer1, footer2, footer3};
+export default { navlinks, socialicon, footer1, footer2, footer3};
