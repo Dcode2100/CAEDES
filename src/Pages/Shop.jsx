@@ -1,13 +1,11 @@
 import React,{ useEffect} from 'react'
+import supabase from '../../client';
 import { Footer, Header } from "../components";
-
-
-
+console.log(supabase);
 const Shop = () => {
+  
+ 
 
-  useEffect(() => (
-    fetch
-  ))
   return (
     <div className="shop">
       <Header />
