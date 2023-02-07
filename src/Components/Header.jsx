@@ -20,20 +20,20 @@ const Header = () => {
           />
         </Link>
       </div>
-      <div className="navlink-container items-center pr-4 text-white">
+      <div className="navlink-container items-center text-white">
         <div className="desktop max-sm:hidden">
-          {navlinks.map((item) => (
-            <Link className="pr-2" key={item.id} to={item.link}>
+          {navlinks.map((item) => 
+            <Link className="pr-6" key={item.id} to={item.link}>
               {item.id}
             </Link>
-          ))}
+          )}
         </div>
 
         <button
-          className={`mobile sm:hidden `}
+          className="mobile mr-4 sm:hidden"
           onClick={() => setToggle((prev) => !prev)}
         >
-          {toggle ? <Close /> : <Menu/> }
+          {toggle ? <Close /> : <Menu />}
         </button>
 
         <div
@@ -41,15 +41,11 @@ const Header = () => {
             toggle ? "flex" : "hidden"
           } sm:hidden`}
         >
-          {navlinks.map((item) => {
-            return (
-              <div className="">
+          {navlinks.map((item) => 
                 <Link key={item.id} to={item.link}>
                   {item.id}
                 </Link>
-              </div>
-            );
-          })}
+          )}
         </div>
       </div>
     </div>
