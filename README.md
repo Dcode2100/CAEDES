@@ -1,3 +1,7 @@
+Installation and rendering procedure - 
+npm i && npm run dev to start the development environment
+
+
 Vite - We are using vite as our build tool for faster compilation for development of our web app.
 
 CAEDES - This is a Ecommerce for specific keychain selling made with best react practices and following SOLID principals with optmized folder structure.
