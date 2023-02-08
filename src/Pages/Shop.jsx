@@ -1,15 +1,16 @@
-import React,{ useEffect} from 'react'
-import supabase from '../../client';
+import React from 'react'
 import { Footer, Header } from "../components";
-console.log(supabase);
+import Cardlist from '../components/Cardlist';
+
 const Shop = () => {
-  
- 
 
   return (
     <div className="shop">
       <Header />
-      Shop
+      <div className='product-data'>
+        cardlist
+        <Cardlist/>
+      </div>
       <Footer />
     </div>
   );
