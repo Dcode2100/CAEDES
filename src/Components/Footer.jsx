@@ -7,8 +7,8 @@ import { footer1, footer2, footer3 } from "../common/Common";
 const Footer = () => {
   return (
     <div className="box-border  bg-custom-b">
-      <div className="flex w-full flex-wrap p-7">
-        <div className="flex h-32 w-60 flex-col items-center sm:mr-4 md:w-48">
+      <div className="flex w-full flex-wrap p-7 max-xs:flex-col max-xs:items-center sm:justify-evenly">
+        <div className="flex h-32 w-60 flex-col items-center max-xs:items-center sm:mr-4 md:w-48">
           <img className="mb-3 h-12" src={mainlogo} alt="logo"></img>
           <div className="pb-3 text-custom-red">Connect with us</div>
           <div className="flex gap-3">
@@ -19,7 +19,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="footer1 flex h-32 w-60 flex-col pl-8 text-white max-xs:mt-6 max-xs:w-56 sm:w-[11.5rem]">
+        <div className="footer1 flex h-32 w-60 flex-col pl-8 text-white max-xs:mt-6 max-xs:w-56 max-xs:items-center max-xs:p-0 sm:w-[11.5rem]">
           <h1 className="mb-4">My Account</h1>
 
           {footer1.map((item) => (
@@ -28,7 +28,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="footer2 flex h-32 flex-col pl-8 text-white max-xs:mt-6 max-xs:w-56 xs:w-60 sm:w-32">
+        <div className="footer2 flex h-32 flex-col pl-8 text-white max-xs:mt-6 max-xs:w-56 max-xs:items-center max-xs:p-0 xs:w-60 sm:w-32">
           <h1 className="mb-4">About us</h1>
           {footer2.map((item) => (
             <Link className="text-custom-gray" key={item.id} to={item.link}>
@@ -37,16 +37,16 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="footer3 flex h-32 w-60 flex-col pl-8 text-white max-xs:mt-6 sm:w-48">
+        <div className="footer3 flex h-32 w-60 flex-col pl-8 text-white max-xs:mt-6 max-xs:items-center max-xs:p-0 sm:w-48 max-sm:mt-4">
           <h1 className="mb-4">Customer service</h1>
           {footer3.map((item) => (
-              <Link className="text-custom-gray" key={item.id} to={item.link}>
-                {item.id}
-              </Link>
+            <Link className="text-custom-gray" key={item.id} to={item.link}>
+              {item.id}
+            </Link>
           ))}
         </div>
 
-        <div className="footer__container-newsletter w-60 pl-8 max-xs:mt-6">
+        <div className="footer__container-newsletter w-60 pl-8 max-xs:hidden max-sm:mt-4">
           <p className=" mb-4 text-white">Subcribe to our Newsletter</p>
           <div className="relative">
             <input
@@ -59,8 +59,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-11 w-full items-center justify-center bg-white text-custom-gray max-xs:mt-6">
-        CAEDES | @2023 All rights reserved
+      <div className=" bg-custom-b pb-[2rem]">
+        <div className="flex h-11 w-full items-center justify-center bg-white text-custom-gray max-xs:mt-6">
+          CAEDES | @2023 All rights reserved
+        </div>
       </div>
     </div>
   );
