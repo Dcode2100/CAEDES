@@ -14,3 +14,6 @@ CSS - TailwindCSS for better readibility and understanding of components.( confi
 
 Strategies for development - 
 1. Mobile first approch for best practices.
+2. 
+
+

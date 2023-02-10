@@ -7,6 +7,7 @@ import Login from './Login';
 import Productlist from './Productlist';
 import Sidebar from './Sidebar';
 import Signup from './Signup';
+import Filter from './Filter';
 
 export  {
     Cards,
@@ -17,5 +18,6 @@ export  {
     Login,
     Productlist,
     Sidebar,
-    Signup
+    Signup,
+    Filter
 }

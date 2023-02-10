@@ -2,10 +2,10 @@ import React from 'react'
 
 const Signup = () => {
   return (
-    <div className=''>
+    <div className='className'>
       
     </div>
   )
 }
 
-export default Signup
+export default Signup;

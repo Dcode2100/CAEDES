@@ -1,19 +1,20 @@
 import React from 'react'
-import { Footer, Header } from "../components";
+import { Footer, Header, Filter } from "../components";
 import Cardlist from '../components/Cardlist';
 
 const Shop = () => {
-
+  
+  
   return (
     <div className="shop">
       <Header />
-      <div className='product-data'>
-        cardlist
-        <Cardlist/>
+      <div className="cardlist&filter xs:flex xs:m-10 ">
+        <Filter/> 
+        <Cardlist />
       </div>
       <Footer />
     </div>
   );
 }
 
-export default Shop
+export default Shop;
