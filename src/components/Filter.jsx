@@ -1,15 +1,23 @@
 import React, { useState } from "react";
-import { ArrowDownward} from "@mui/icons-material";
-import { categories,sorting } from "../common/Common";
-
+import { ArrowDownward } from "@mui/icons-material";
+import { categories, sorting } from "../common/Common";
+import {Slider} from '@mui/material';
 const Filter = () => {
   const [filter, setFilter] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("");
-  
+  const [value, setValue] = useState([0, 20]);
+
   const setFilterActive = () => setFilter((prevstate) => !prevstate);
   const handleCategoryClick = (category) => {
-      setSelectedCategory(category);
-    };
+    setSelectedCategory(category);
+  };
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  
+  function valuetext(value) {
+    return `${value}°C`;
+  }
 
   return (
     <div className="filter">
@@ -52,10 +60,13 @@ const Filter = () => {
                 ))}
               </div>
               <div className="filter-right-container box-border w-[55%] border-4 ">
-                <div className="font-bold ml-0.5 text-gray-700 "> Sort Options </div>
+                <div className="ml-0.5 font-bold text-gray-700 ">
+                  {" "}
+                  Sort Options{" "}
+                </div>
                 {sorting.map((item) => (
                   <button
-                    className="my-2 ml-2.5 flex rounded-md bg-gray-500 p-2 text-xs text-white font-medium"
+                    className="my-2 ml-2.5 flex rounded-md bg-gray-500 p-2 text-xs font-medium text-white"
                     key={item.id}
                   >
                     {item.id}
@@ -67,9 +78,57 @@ const Filter = () => {
         )}
       </div>
 
-      <div className="filter-desktop flex h-[15rem] w-full justify-between bg-yellow-300 max-xs:hidden">
-        <div className="category bg-custom-gray">category 1</div>
-        
+      <div className="filter-desktop flex w-[14rem] flex-col justify-between rounded-lg border-2 bg-custom-graybg max-xs:hidden">
+        <div className="p-5">
+          <div className="categories ">
+            <p className=" text-sm font-bold  text-custom-b">
+              Shop by Category
+            </p>
+            <div className="ml-[0.5rem]">
+              {categories.map((item) => (
+                <p
+                  key={item.id}
+                  className="my-2 text-xs font-[600] text-custom-b"
+                >
+                  {item.id}
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="price mrange my-4 w-full rounded-lg bg-white">
+            <div className="p-3">
+              <div className="border-b-2 border-slate-400 text-sm font-bold pb-2 mb-2">
+                Price Range
+              </div>
+              <Slider
+                getAriaLabel={() => "Temperature range"}
+                value={value}
+                onChange={handleChange}
+                valueLabelDisplay="auto"
+                getAriaValueText={valuetext}
+                size="small"
+              />
+            </div>
+          </div>
+
+          <div className="sort w-full rounded-lg bg-white">
+            <div className="p-2">
+              <div className="border-b-2 border-slate-400 text-sm font-bold mb-2 pb-2 pl-2">
+                Sort By
+              </div>
+              <div className="ml-[0.5rem]">
+                {sorting.map((item) => (
+                  <p
+                    key={item.id}
+                    className="my-2 text-xs font-[600] text-custom-b"
+                  >
+                    {item.id}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

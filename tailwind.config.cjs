@@ -16,6 +16,8 @@ module.exports = {
         "custom-b": "#212226",
         "custom-red": "#FF0000",
         "custom-gray": "#666666",
+        "custom-graybg": "#F6F7FB",
+        
       },
     },
   },

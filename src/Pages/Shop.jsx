@@ -8,7 +8,7 @@ const Shop = () => {
   return (
     <div className="shop">
       <Header />
-      <div className="cardlist&filter xs:flex xs:m-10 ">
+      <div className="cardlist&filter xs:flex xs:m-[2rem] ">
         <Filter/> 
         <Cardlist />
       </div>
