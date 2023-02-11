@@ -5,7 +5,7 @@ import {Home, Contactus, Shop, Signuppage, Loginpage, Profile, Cart} from './pag
 
 function App() {
   return (
-    <div className="App box-border border-2 border-blue-700  m-0 p-0">
+    <div className="App box-border border-2 m-0 p-0">
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>

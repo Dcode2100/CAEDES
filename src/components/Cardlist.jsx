@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import supabase from '../config/supabaseClient';
 import Cards from './Cards';
-import Filter from './Filter';
 
 const Cardlist = () => {
     const [product,setProduct] = useState(null);

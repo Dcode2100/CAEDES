@@ -13,6 +13,23 @@ export const navlinks = [
   {  id: "Account", link: "/profile"},
 ];
 
+export const categories = [
+    { id: "Rubber Keychain"},
+    { id: "3D Rubber Keychain"},
+    { id: "Metal Keychain"},
+    { id: "Wrist Band"},
+    { id: "Label"},
+    { id: "Silicon Patch"},
+]
+
+
+export const sorting = [
+  { id: "Eligible for Pay On Delivery" },
+  { id: "Latest" },
+  { id: "Price Low" },
+  { id: "Price High" },
+  { id: "Rating" },
+];
 export const socialicon = [
     {  id: 'facebook',  icon: <Facebook /> },
     {  id: 'twitter',   icon: <Twitter /> },
