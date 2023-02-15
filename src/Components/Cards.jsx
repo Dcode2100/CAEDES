@@ -1,14 +1,16 @@
-import { Title } from "@mui/icons-material";
+import Cardcontainer from "../common/customcomp/Cardcontainer";
 import React from "react";  
- 
+
+
 const Cards = ({product}) => {
-  const {id,title,price} = product;
+  
+
   return (
-    <div className="h-32 w-52 border-2 border-green-700 bg-cyan-500">
-      {id}
-      {title}
-      {price}
+    <div className='flex flex-col item-center justify-center w-full border-2 border-yellow-500'>
+      <Cardcontainer {...product}/>
+
     </div>
+     
   );
 }
 

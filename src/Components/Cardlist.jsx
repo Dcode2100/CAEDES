@@ -23,7 +23,7 @@ const Cardlist = () => {
     },[])
     
   return (
-      <div className="cardlist-container">
+      <div className="cardlist-container flex  ">
         {fetcherror && fetcherror}
         {product &&
           product.map((item) => <Cards key={item.id} product={item} />)}

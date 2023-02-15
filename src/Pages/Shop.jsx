@@ -1,6 +1,6 @@
 import React from 'react'
-import { Footer, Header, Filter } from "../components";
-import Cardlist from '../components/Cardlist';
+import { Footer, Header, Filter } from "../Components";
+import Cardlist from '../Components/Cardlist';
 
 const Shop = () => {
   

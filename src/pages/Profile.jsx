@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Header } from "../components";
+import { Footer, Header } from "../Components";
 
 const Profile = () => {
   return (
